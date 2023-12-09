@@ -67,7 +67,7 @@ def part1(data):
 
 	print(f'ans is {ans}')
 
-
+# NOTE : incomplete (times out)
 def part2(data):
 	seeds = list(map(int, data[0].split(':')[1].strip().split(' ')))
 	data = data[2:]
