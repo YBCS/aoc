@@ -21,6 +21,7 @@ def part1(data):
 
 # returns the diffs array and isAllSame
 def getDiffs(items): # ughhhh 
+	 # NOTE : every one seems to notice this can be solved cleanly recursively, so implement that too
 	diffs = []
 	prev = items[0]
 	isAllSame = True

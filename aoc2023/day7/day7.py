@@ -66,6 +66,7 @@ def part1(data):
 
 # 251545217	# too high
 
+# NOTE : incomplete
 def part2(data):
 	time, distance = data[0].split(':')[1].strip().split(' '), data[1].split(':')[1].strip().split(' ')
 	t = ""
