@@ -11,6 +11,7 @@ def part1(data):
 
 #/*****************************************************************************/
 # by jonathan paulson
+# https://github.com/jonathanpaulson/AdventOfCode/blob/master/2023/12.py
 # this is a dp problem so don't feel too bad; you should be able to do this once you've practised some dp 
 def is_valid(dots, blocks): # dots: ".###.##.#..." blocks = [3, 2, 1] ; returns true
 	# print('is valid called ', dots, blocks)
