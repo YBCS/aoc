@@ -1,5 +1,5 @@
 # aoc day 12
-data = open('input.txt', 'r').read().split('\n')
+data = open('test.txt', 'r').read().split('\n')
 
 # NOTE : incomplete
 def part1(data):
@@ -53,16 +53,48 @@ def solution(data):
 	print(ans)
 #/*****************************************************************************/
 
-
-# this is mine :)
+# NOTE : did not work idk why
+cache = {}
 def is_equal(dots, blocks):
+	print(dots, blocks, "received")
 	dots = dots.split('.')
-	dots = [d for d in dots if d]
-	dots = [len(d) for d in dots]
+	dots = tuple(len(d) for d in dots if d)
 	return dots == blocks
 
+def calcScore(dots, blocks, i):
+	key = (dots[i:], blocks) # nah this still wrong; ask gpt 4
+	
+	if key in cache:
+		# print('cache hit ', key)
+		return cache[key]
+
+	if i == len(dots):
+		cache[key] = 1 if is_equal(dots, blocks) else 0
+		return cache[key]
+	if dots[i] == '?':
+		cache[key] = (calcScore(dots[:i]+"#"+dots[i+1:], blocks, i+1) + 
+				calcScore(dots[:i]+"."+dots[i+1:], blocks, i+1))
+		return cache[key]
+	else:
+		cache[key] = calcScore(dots, blocks, i+1)
+		return cache[key]
+
+def part2(data):
+	ans = 0
+	for d in data:
+		dots, blocks = d.split()
+		# dots = "?".join([dots]*5)
+		blocks = tuple(map(int, blocks.split(',')))
+		# blocks *= 5
+		score = calcScore(dots, blocks, 0)
+		print(dots, blocks, score)
+		ans += score
+	# [print(k, cache[k]) for k in cache]
+	print(ans)
+
 # part1(data)
-solution(data)
+# solution(data)
+part2(data)
 
 
 
