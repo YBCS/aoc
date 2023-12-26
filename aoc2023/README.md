@@ -7,10 +7,10 @@ This is the first year I stuck till the end of advent of code 😅. All code are
 
 Focus was completion 😵.
 
-| Day| Star 1| Star 2|
-| -- | --- | --- |
-| 01 | 🌟  | 🌟  |
-| 02 | 🌟  | 🌟  |
+| Day                    | Star 1| Star 2|
+| -----------------------| --- | --- |
+| [01]('./test.py') | 🌟  | 🌟  |
+| [02]('./day2/day2.py') | 🌟  | 🌟  |
 | 03 | 🌟  | 🌟  |
 | 04 | 🌟  | 🌟  |
 | 05 | 🌟  |     |
