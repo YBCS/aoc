@@ -6,6 +6,7 @@ data = open(file, "r").read().split("/n")
 
 def part1():
 	# literally a small parser
+	# it could be more worse if nested inputs are allowed : recursion
 	for line in data:
 		# lets brute this
 		# find mul(
