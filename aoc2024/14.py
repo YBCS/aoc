@@ -91,6 +91,10 @@ def part1(data):
 
 
 def part2():
+	# try no of floating islands
+	# the answer probably has less islands
+	# print them out and check; it wants the iteration number
+	# can u print out a frame of the input
 	pass
 
 if __name__ == "__main__":	
