@@ -1,5 +1,9 @@
 from collections import defaultdict, deque
+dirs = [(-1,0),(0,1),(1,0),(0,-1)] # up right down left
 
+def print_grid(grid):
+	# there is a way to join the grid too
+	[print(row) for row in grid]
 
 def part1():
 	pass
