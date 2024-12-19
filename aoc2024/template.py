@@ -1,5 +1,18 @@
 from collections import defaultdict, deque
+from functools import cache
+import heapq
+import math
+
 dirs = [(-1,0),(0,1),(1,0),(0,-1)] # up right down left
+
+# TODO
+# profiling (timing)
+# import std libs
+# 
+
+# cp template.py day_no.py
+# topaz link
+
 
 def print_grid(grid):
 	# there is a way to join the grid too
