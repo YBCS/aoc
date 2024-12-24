@@ -91,6 +91,7 @@ def part1(data):
 
 
 def part2():
+	## or just look for xxxxxxx :D
 	# try no of floating islands
 	# the answer probably has less islands
 	# print them out and check; it wants the iteration number
