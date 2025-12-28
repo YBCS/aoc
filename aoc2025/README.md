@@ -1,8 +1,9 @@
 # my stats for AOC2024
-[AOC2024 website](https://adventofcode.com/2024)
+[AOC2025 website](https://adventofcode.com/2025)
 
 [SubReddit](https://www.reddit.com/r/adventofcode/)
 
+[my notes](/aoc2025/note.md)
 
 | Day                    			| Star 1| Star 2|
 | ----------------------------------|------	|------	|
